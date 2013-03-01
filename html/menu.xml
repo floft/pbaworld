@@ -1,0 +1,6 @@
+<menu>
+	<page url="/html">Welcome</page>
+	<page url="print">Print</page>
+	<page url="archives">Archives</page>
+	<page url="contact">Contact</page>
+</menu>

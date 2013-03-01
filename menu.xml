@@ -1,0 +1,6 @@
+<menu>
+	<page url="/">Welcome</page>
+	<page url="study">Study</page>
+	<page url="user">User</page>
+	<page url="contact">Contact</page>
+</menu>

@@ -1,0 +1,4 @@
+User-agent: *
+Sitemap: http://pba.floft.net/sitemap.txt
+Disallow: /user.php
+Disallow: /html/contact.php

@@ -1,0 +1,30 @@
+<FilesMatch "^(\..*|badwords\.txt)$">
+  Order allow,deny
+  Deny from all
+  Satisfy All
+</FilesMatch>
+
+ErrorDocument 400 /errors/400.php
+ErrorDocument 401 /errors/401.php
+ErrorDocument 403 /errors/403.php
+ErrorDocument 404 /errors/404.php
+ErrorDocument 500 /errors/500.php
+
+DirectoryIndex index.php
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^study/Print /print [R=301,L]
+RewriteRule ^study/Questions /question [R=301,L]
+RewriteRule ^study/FillIn /fillin [R=301,L]
+RewriteRule ^study/Archives /archives [R=301,L]
+RewriteRule ^Study /study [R=301,L]
+RewriteRule ^About /contact [R=301,L]
+RewriteRule ^Contribute /user [R=301,L]
+
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.php -f
+RewriteRule (.*) $1\.php [L,NC]
