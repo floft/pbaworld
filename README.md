@@ -9,6 +9,9 @@ structure. As for the license, it's under the
 [ISC license](http://floft.net/uploads/isc-license.txt). Feel free to use
 it and improve it.
 
+Look at *pba_questions.sql* for an archive of the database right before this
+website was shut down.
+
 **Dependencies**  
 *a webserver*  
 PHP  
